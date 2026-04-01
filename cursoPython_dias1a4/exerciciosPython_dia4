@@ -1,0 +1,76 @@
+# NÍVEL 1 — aquecimento
+## 🧠 1. MAP (dobro)
+numeros = [2, 4, 6]
+
+dobroNumeros = list(map(lambda x: x*2, numeros))
+print(dobroNumeros)
+
+## 🧠 2. FILTER (ímpares)
+numeros2 = [1, 2, 3, 4, 5, 6]
+
+numerosImpares = list(filter(lambda x: x % 2 == 1, numeros2))
+print(numerosImpares)
+
+## 🧠 3. REDUCE (multiplicação)
+from functools import reduce
+numeros3 = [1, 2, 3, 4]
+
+multiplicados = reduce(lambda x, y: x*y, numeros3)
+print(multiplicados)
+
+# 🌿 NÍVEL 2 — começando a pensar mais
+## 🧠 4. MAP (tamanho das palavras)
+nomes = ["Ana", "Beatriz", "João"]
+
+tamanhoNomes = list(map(lambda x: len(x), nomes))
+print(tamanhoNomes)
+
+## 🧠 5. FILTER (pegue apenas nomes com 4 ou mais letras)
+nomes2 = ["Ana", "Beatriz", "João", "Carlos"]
+
+nomesGrandes = list(filter(lambda x: len(x) >= 4, nomes2))
+print(nomesGrandes)
+
+## 🧠 6. REDUCE (imprima o maior número)
+numeros4 = [10, 3, 25, 7]
+
+maiorNumero = reduce(lambda x, y: x if x > y else y, numeros4)
+print(maiorNumero)
+
+# 🌳 NÍVEL 3 — mistura (nível ICzinho 👀)
+
+## 🧠 7. FILTER + MAP
+## pegar números maiores que 10
+## depois multiplicar por 2
+numeros5 = [5, 8, 12, 3, 7, 20]
+
+maioresQue10 = list(filter(lambda x: x > 10, numeros5))
+multiplicandoPor2 = list(map(lambda x: x*2, maioresQue10))
+print(multiplicandoPor2)
+
+## 🧠 8. MAP + REDUCE
+## elevar todos ao quadrado
+## somar tudo
+numeros6 = [1, 2, 3, 4]
+
+numerosAoQuadrado = list(map(lambda x: x*x, numeros6))
+somaDosQuadrados = reduce(lambda x, y: x + y, numerosAoQuadrado)
+print(somaDosQuadrados)
+
+## 🧠 9. FILTER + REDUCE
+## pegar apenas os pares
+## somar eles
+numeros7 = [2, 3, 4, 5, 6]
+
+numerosPares = list(filter(lambda x: x % 2 == 0, numeros7))
+somaPares = reduce(lambda x, y: x + y, numerosPares)
+print(somaPares)
+
+# 🔥 DESAFIO FINAL (bem legal 👀)
+## 🧠 10. transformar tudo em MAIÚSCULO e manter apenas nomes com mais de 4 letras.
+
+nomes8 = ["ana", "joao", "maria"]
+
+maiusculos = list(map(lambda x: x.upper(), nomes8))
+nomes4Letras = list(filter(lambda x: len(x) > 4, maiusculos))
+print(nomes4Letras)

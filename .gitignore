@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Ambiente virtual
+.venv/
+
+# Logs
+*.log
+
+# VSCode
+.vscode/
+
+# Console Ninja
+.console-ninja/
+
+# Sistema
+.DS_Store
+Thumbs.db
