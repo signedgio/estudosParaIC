@@ -1,5 +1,6 @@
 import cv2 as cv
 import numpy as np
+# importamos numpy aqui pq eh ele quem cria a matriz
 
 ## DESENHNADO EM IMAGENS:
 

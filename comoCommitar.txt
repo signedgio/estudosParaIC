@@ -1,0 +1,4 @@
+git status
+git add .
+git commit -m "commit do dia 7 de estudos! dia 01/04/26."
+git push
