@@ -114,6 +114,5 @@ texto = cv.putText(tela, "Oie! To fazendo exercícios. :)", (95, 95), cv.FONT_HE
 cv.imshow("Tela + rectangle + circle + texto", texto)
 
 
-
 cv.waitKey(0)
 
